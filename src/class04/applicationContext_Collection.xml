@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        List
+    -->
+    <!--<bean id="collectionBean" class="class04.CollectionBean">
+        <property name="addressList">
+            <list>
+                <value>서울시 강남구 역삼동</value>
+                <value>서울시 강남구 행당동</value>
+                <value>서울시 강남구 행당동</value>
+            </list>
+        </property>
+    </bean>-->
+
+    <!--
+        Set
+    -->
+    <!--<bean id="collectionBean" class="class04.CollectionBean">
+        <property name="addressSet">
+            <set value-type="java.lang.String">
+                <value>서울시 강남구 역삼동</value>
+                <value>서울시 강남구 행당동</value>
+                <value>서울시 강남구 행당동</value>
+            </set>
+        </property>
+    </bean>-->
+
+    <!--
+        Mao
+    -->
+   <!-- <bean id="collectionBean" class="class04.CollectionBean">
+        <property name="map">
+            <map>
+                <entry>
+                    <key><value>고길동</value></key>
+                    <value>서울시 강남구 역삼동</value>
+                </entry>
+                <entry>
+                    <key><value>마이콜</value></key>
+                    <value>서울시 강남구 화곡동</value>
+                </entry>
+            </map>
+        </property>
+    </bean>-->
+    <!--
+        properties
+    -->
+    <bean id="collectionBean" class="class04.CollectionBean">
+        <property name="properties">
+            <props>
+                <prop key="고길동">서울시 강남구 역삼동</prop>
+                <prop key="마이콜">서울시 강남구 화곡동</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

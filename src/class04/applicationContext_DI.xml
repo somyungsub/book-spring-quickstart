@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--<bean id="tv" class="class04.SamsungTV">-->
+    <!--&lt;!&ndash; 생성자 매개변수 설정 &ndash;&gt;-->
+    <!--<constructor-arg ref="sony"></constructor-arg>-->
+    <!--<constructor-arg value="1000"></constructor-arg>-->
+    <!--</bean>-->
+
+    <!--
+        생성자 인젝션
+        index: 매개변수 순서 (0부터 시작)
+    -->
+    <!--<bean id="tv" class="class04.SamsungTV">
+        &lt;!&ndash;<constructor-arg index="0" ref="apple"></constructor-arg>&ndash;&gt;
+        &lt;!&ndash;<constructor-arg index="0" ref="sony"></constructor-arg>&ndash;&gt;
+        &lt;!&ndash;<constructor-arg index="1" value="1000"></constructor-arg>&ndash;&gt;
+    </bean>-->
+
+    <!--
+        Setter 인젝션
+        name -> 메서드이름
+        value or ref -> 매개변수
+         - 객체 전달 -> ref
+         - 기본타입 -> value
+    -->
+    <!--<bean id="tv" class="class04.SamsungTV">
+        <property name="speaker" ref="sony"/>
+        <property name="price" value="200000"/>
+        <property name="price22" value="50000"/>
+    </bean>-->
+
+    <!--
+        Settr 인젝션2
+        p네임스페이스 활용
+    -->
+    <bean id="tv" class="class04.SamsungTV" p:speaker-ref="sony" p:price="25000" p:price22="50000"/>
+
+    <bean id="sony" class="class04.SonySpeaker" lazy-init="true"></bean>
+    <bean id="apple" class="class04.AppleSpeaker" lazy-init="true"></bean>
+
+</beans>
