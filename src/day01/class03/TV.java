@@ -1,3 +1,5 @@
+package day01.class03;
+
 public interface TV {
     public void powerOn();
     public void powerOff();

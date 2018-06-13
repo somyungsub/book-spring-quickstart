@@ -1,3 +1,5 @@
+package day01.class03;
+
 public class BeanFactory {
     public Object getBean(String beanName) {
         if ("samsung".equals(beanName)) {

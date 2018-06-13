@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--<bean id="tv" class="day01.class03.SamsungTV"></bean>-->
+
+    <!--  초기화, 삭제전처리, lazy-init:true - 사용시점에 객체로딩 -->
+    <bean id="tv" class="day01.class03.SamsungTV" init-method="initMethod" destroy-method="destoryMethod" lazy-init="true"></bean>
+
+    <!-- 프로토타입 : 싱글톤x -->
+    <bean id="tv2" class="day01.class03.SamsungTV" init-method="initMethod" destroy-method="destoryMethod" lazy-init="true" scope="prototype"></bean>
+
+</beans>
