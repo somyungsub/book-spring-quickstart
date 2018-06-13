@@ -1,6 +1,4 @@
-package class04;
-
-import org.springframework.stereotype.Controller;
+package day01.class04;
 
 import java.util.List;
 import java.util.Map;

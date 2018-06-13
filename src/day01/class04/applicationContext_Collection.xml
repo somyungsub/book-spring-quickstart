@@ -6,7 +6,7 @@
     <!--
         List
     -->
-    <!--<bean id="collectionBean" class="class04.CollectionBean">
+    <!--<bean id="collectionBean" class="day01.class04.CollectionBean">
         <property name="addressList">
             <list>
                 <value>서울시 강남구 역삼동</value>
@@ -19,7 +19,7 @@
     <!--
         Set
     -->
-    <!--<bean id="collectionBean" class="class04.CollectionBean">
+    <!--<bean id="collectionBean" class="day01.class04.CollectionBean">
         <property name="addressSet">
             <set value-type="java.lang.String">
                 <value>서울시 강남구 역삼동</value>
@@ -32,7 +32,7 @@
     <!--
         Mao
     -->
-   <!-- <bean id="collectionBean" class="class04.CollectionBean">
+   <!-- <bean id="collectionBean" class="day01.class04.CollectionBean">
         <property name="map">
             <map>
                 <entry>
@@ -49,7 +49,7 @@
     <!--
         properties
     -->
-    <bean id="collectionBean" class="class04.CollectionBean">
+    <bean id="collectionBean" class="day01.class04.CollectionBean">
         <property name="properties">
             <props>
                 <prop key="고길동">서울시 강남구 역삼동</prop>

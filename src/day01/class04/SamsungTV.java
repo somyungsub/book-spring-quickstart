@@ -1,4 +1,4 @@
-package class04;
+package day01.class04;
 
 public class SamsungTV implements TV {
 
@@ -10,16 +10,16 @@ public class SamsungTV implements TV {
         생성자 인젝션 연습
      */
     public SamsungTV() {
-        System.out.println(" ===> class03.SamsungTV(1) 객체 생성");
+        System.out.println(" ===> day01.class03.SamsungTV(1) 객체 생성");
     }
 
     public SamsungTV(Speaker speaker) {
-        System.out.println(" ===> class03.SamsungTV(2) 객체 생성");
+        System.out.println(" ===> day01.class03.SamsungTV(2) 객체 생성");
         this.speaker = speaker;
     }
 
     public SamsungTV(Speaker speaker, int price) {
-        System.out.println(" ===> class03.SamsungTV(3) 객체 생성");
+        System.out.println(" ===> day01.class03.SamsungTV(3) 객체 생성");
         this.speaker = speaker;
         this.price = price;
     }
@@ -54,25 +54,25 @@ public class SamsungTV implements TV {
 
     @Override
     public void powerOn() {
-        System.out.println("class03.SamsungTV --- 전원 켠다.");
+        System.out.println("day01.class03.SamsungTV --- 전원 켠다.");
         System.out.println("가격 : " + price);
         System.out.println("가격2 : " + pricee);
     }
 
     @Override
     public void powerOff() {
-        System.out.println("class03.SamsungTV --- 전원 끈다.");
+        System.out.println("day01.class03.SamsungTV --- 전원 끈다.");
     }
 
     @Override
     public void volumeUp() {
-        System.out.println("class03.SamsungTV --- 소리 올린다.");
+        System.out.println("day01.class03.SamsungTV --- 소리 올린다.");
         speaker.volumeUp();
     }
 
     @Override
     public void volumeDown() {
-        System.out.println("class03.SamsungTV --- 소리 내린다.");
+        System.out.println("day01.class03.SamsungTV --- 소리 내린다.");
         speaker.volumeDown();
     }
 }

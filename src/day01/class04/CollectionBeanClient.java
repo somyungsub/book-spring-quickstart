@@ -1,9 +1,8 @@
-package class04;
+package day01.class04;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-import java.util.Map;
 import java.util.Properties;
 
 public class CollectionBeanClient {

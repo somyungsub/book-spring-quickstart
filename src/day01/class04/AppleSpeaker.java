@@ -1,4 +1,4 @@
-package class04;
+package day01.class04;
 
 public class AppleSpeaker implements Speaker {
     public AppleSpeaker() {
